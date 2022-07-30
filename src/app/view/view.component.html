@@ -1,0 +1,43 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>Disney Characters</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{getDisney.imageUrl}}" alt="Photo of a Shiba">
+    <mat-card-content>
+        <div>
+            <b>ID : </b>{{getDisney._id}}
+        </div>
+        <div>
+            <b>Name : </b>{{getDisney.name}}
+        </div>
+        <div>
+            <b>Url : </b>{{getDisney.url}}
+        </div>
+        <div>
+            <b>films : </b>{{getDisney.films}}
+        </div>
+        <div>
+            <b>Short Films : </b>{{getDisney.ShortFilms}}
+        </div>
+        <div>
+            <b>Tv Shows : </b>{{getDisney.tvShows}}
+        </div>
+        <div>
+            <b>Video Games : </b>{{getDisney.videoGames}}
+        </div>
+        <div>
+            <b>Park Attractions : </b>{{getDisney.parkAttractions}}
+        </div>
+        <div>
+            <b>Allies : </b>{{getDisney.allies}}
+        </div>
+        <div>
+            <b>Enemies : </b>{{getDisney.enemies}}
+        </div>
+
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button style="background-color:#ed254e; color:white" class="btn-primary-bg mr-12"
+            (click)=" discard()">Close</button>
+    </mat-card-actions>
+</mat-card>
